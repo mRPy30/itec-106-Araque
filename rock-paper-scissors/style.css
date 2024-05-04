@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins'
+}
+
+:root{
+    --background--: hsl(200, 100%, 50%);
+    --hoverBack--: hsl(200, 100%, 70%);
+}
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+#gamePlay{
+    margin-bottom: 30px;
+}
+
+#gamePlay h2{
+    font-size: 35px;
+}
+
+#gamePlay .selector{
+    display: flex;
+    justify-content: center;
+}
+#gamePlay .selector button{
+    font-size: 60px;
+    margin: 0 10px;
+    min-width: 100px;
+    border-radius: 250px;
+    cursor: pointer;
+    background-color: var(--background--);
+}
+#gamePlay .selector button:hover{
+    background-color: var(--hoverBack--);
+}
+
+#player , #computer{
+    font-size: 35px;
+    font-weight: bold;
+}
+#result{
+    font-size: 50px;
+    font-weight: bold;
+}

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+:root{
+    --Background--: hsl(0, 0%, 15%);
+    --fontColor--: hsl(0, 0%, 96%);
+    --gray--: hsl(0, 0% , 30%);
+    --LightButtons--: hsl(47, 100%, 46%);
+    --hoverLightButtons--: hsl(47, 100%, 50%);
+    --activeLightButtons--: hsl(38, 100%, 50%);
+    --hoverDark--: hsl(0, 1%, 23%);
+    --activeButton--: hsl(0, 0%, 60%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#show{
+    width: 100%;
+    background-color: var(--gray--);
+    text-align: left;
+    border: none;
+    height: 100px;
+    color: var(--fontColor--);
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 10px 0 10px 13px;
+}
+#calculator{
+    background-color: var(--Background--);
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+button{
+    background-color: var(--gray--);
+    color: var(--fontColor--);
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color: var(--hoverDark--);
+}
+button:active{
+    background-color: var(--activeButton--);
+}
+
+.operation{
+    background-color: var(--LightButtons--);
+    transition: background-color 0.3s;
+}
+.operation:hover{
+    background-color: var(--hoverLightButtons--);
+}
+.operation:active{
+    background-color: var(--activeLightButtons--);
+}
